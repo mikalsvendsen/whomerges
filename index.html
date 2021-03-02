@@ -1,5 +1,6 @@
 <html>
  <head>
+  <meta property="og:type" content="website">
  </head>
 <body>
 <div id="text"></div>
@@ -47,6 +48,21 @@ document.getElementById("text").innerHTML = mergeStr;
   
     var link = document.createElement('meta');
   link.setAttribute('property', 'og:title');
+  link.content = mergeStr
+  document.getElementsByTagName('head')[0].appendChild(link);
+ 
+     var link = document.createElement('meta');
+  link.setAttribute('property', 'og:description');
+  link.content = mergeStr
+  document.getElementsByTagName('head')[0].appendChild(link);
+ 
+      var link = document.createElement('meta');
+  link.setAttribute('property', 'title');
+  link.content = mergeStr
+  document.getElementsByTagName('head')[0].appendChild(link);
+ 
+      var link = document.createElement('meta');
+  link.setAttribute('property', 'description');
   link.content = mergeStr
   document.getElementsByTagName('head')[0].appendChild(link);
 
