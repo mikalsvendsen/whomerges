@@ -35,9 +35,7 @@ switch (mergerNum) {
     break;
   
   }
-var mergeText = 'Merger of cap -> master is: ' + merger;
-
-document.getElementById("text").innerHTML = mergeText;
+document.getElementById("text").innerHTML = 'Merger of cap -> master is: ' + merger;
 
 function ISO8601_week_no(dt) 
   {
