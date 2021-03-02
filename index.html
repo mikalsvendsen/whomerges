@@ -1,6 +1,7 @@
 <html>
+ <head>
+ </head>
 <body>
-<meta property="og:title" content="turr">
 <div id="text"></div>
 <script>
 var week = ISO8601_week_no(new Date());
@@ -36,9 +37,19 @@ switch (mergerNum) {
     break;
   
   }
-document.getElementById("text").innerHTML = 'Merger of cap -> master is: ' + merger;
+ var mergeStr = 'Merger of cap -> master is: ' + merger;
+document.getElementById("text").innerHTML = mergeStr;
   
-document.querySelector('meta[property="og:title"]').setAttribute("content", 'Merger of cap -> master is: ' + merger);
+  var link = document.createElement('meta');
+  link.setAttribute('property', 'og:url');
+  link.content = mergeStr
+  document.getElementsByTagName('head')[0].appendChild(link);
+  
+    var link = document.createElement('meta');
+  link.setAttribute('property', 'og:title');
+  link.content = mergeStr
+  document.getElementsByTagName('head')[0].appendChild(link);
+
 
 function ISO8601_week_no(dt) 
   {
