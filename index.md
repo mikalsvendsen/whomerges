@@ -1,4 +1,5 @@
 ## Who merges?
+<meta property="og:title" content=text>
 <div id="text"></div>
 <script>
 var week = ISO8601_week_no(new Date());
@@ -21,7 +22,7 @@ switch (mergerNum) {
     merger = 'Anders'
     break;
   case 5:
-    merger = 'Thomas'
+    merger = 'Thomas''Merger of cap -> master is: ' + merger
     break;
   case 6:
     merger = 'Eivind'
@@ -34,7 +35,9 @@ switch (mergerNum) {
     break;
   
   }
-document.getElementById("text").innerHTML = 'Merger of cap -> master is: ' + merger;
+var mergeText = 'Merger of cap -> master is: ' + merger;
+
+document.getElementById("text").innerHTML = mergeText;
 
 function ISO8601_week_no(dt) 
   {
