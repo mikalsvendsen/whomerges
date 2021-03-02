@@ -1,5 +1,6 @@
 ## Who merges?
 <div id="text"></div>
+<meta property="og:title" content=text>
 <script>
 var week = ISO8601_week_no(new Date());
 var mergerNum = week % 9;
@@ -21,7 +22,7 @@ switch (mergerNum) {
     merger = 'Anders'
     break;
   case 5:
-    merger = 'Thomas''Merger of cap -> master is: ' + merger
+    merger = 'Thomas'
     break;
   case 6:
     merger = 'Eivind'
