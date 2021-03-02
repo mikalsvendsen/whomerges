@@ -1,5 +1,4 @@
 ## Who merges?
-<meta property="og:title" content=text>
 <div id="text"></div>
 <script>
 var week = ISO8601_week_no(new Date());
