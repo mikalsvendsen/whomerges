@@ -1,5 +1,6 @@
 <html>
  <head>
+  <meta charset="utf-8">
   <meta property="og:type" content="website">
  </head>
 <body>
@@ -57,12 +58,12 @@ document.getElementById("text").innerHTML = mergeStr;
   document.getElementsByTagName('head')[0].appendChild(link);
  
       var link = document.createElement('meta');
-  link.setAttribute('property', 'title');
+  link.setAttribute('name', 'title');
   link.content = mergeStr
   document.getElementsByTagName('head')[0].appendChild(link);
  
       var link = document.createElement('meta');
-  link.setAttribute('property', 'description');
+  link.setAttribute('name', 'description');
   link.content = mergeStr
   document.getElementsByTagName('head')[0].appendChild(link);
 
